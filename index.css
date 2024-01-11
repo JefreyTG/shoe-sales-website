@@ -1,0 +1,233 @@
+
+:root{
+    --red:#ef233c;
+    --dark-red:#780000;
+    --light-gray:#edf2f4;
+    --dark-gray: #8d99ae;
+    --blue:#003049; 
+    --beige:#fdf0d5b7;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    width: 800px;
+    height: 100vh;
+    background-image: url('./image/bgn-img1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background:var(--beige);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+div.logo h1{
+    font-size: 35px;
+    color: var(--blue);
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    left: -4%;
+}
+div.logo span{
+    color:var(--red);
+    text-decoration: underline;
+}
+section nav ul{
+    list-style: none;
+
+}
+
+li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--blue);
+    transition: 0.2s;
+}
+a:hover{
+    color: var(--dark-red);
+}
+
+i.fa-regular.fa-heart, i.fa-solid.fa-cart-shopping, i.fa-regular.fa-user{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+    
+}
+i:hover{
+    color: var(--dark-red);
+}
+div.main-content{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-text h1{
+    font-size: 55px;
+    line-height: 70px;
+    font-family: pyxidium quick;
+    background: linear-gradient(to right, #ef233c, #003049 );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 75px;
+    left: 5%;
+}
+.main-text h1 span{
+    font-size: 45px;
+    background: linear-gradient(to right, #ef233c, #003049 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p{
+    width: 200px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 85px;
+    left: 5%;
+    color: var(--blue);
+}
+.main-image img{
+    width: 325px;
+    position: relative;
+    left: 20px;
+    top: 75px;
+}
+.social-icon{
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+}
+i.fa-brands.fa-facebook, i.fa-brands.fa-square-x-twitter, i.fa-brands.fa-square-instagram, i.fa-brands.fa-linkedin{
+    
+    margin: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.social-icon i:hover{
+    color: var(--dark-red);
+}
+div.button{
+    position: absolute;
+    left: 6%;
+    padding: 10px 20px ;
+    border-radius: 30px ;
+    background: linear-gradient(to right, #8d99ae, #003049);
+}
+.button a{
+    color: var(--light-gray);
+    text-decoration: none;
+}
+.button i{
+    color: var(--light-gray);
+    margin-left: 5px;
+    transition: .3s;
+}
+.button:hover i{
+    transform: translate(6px);
+}
+
+/*Products*/
+
+.products{
+    width: 100%;
+    height: 140vh;
+    padding: 25px;
+    background-image: url('./image/bgn-img1.jpg');
+}
+.products h1{
+    margin: 35px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-clip: text;
+    background: linear-gradient(to right, #ef233c, #003049 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.products .box{
+    width: 90%;
+    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 10px;
+}
+div.card{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 440px;
+    box-shadow: 0 0 8px var(--blue);
+    border-radius: 9px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--beige);
+    background-image: url('./image/bgn-img.png');
+    background-size: cover;
+}
+.small-card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translate(-20px);
+    transition: 0.3s;
+    opacity: 0;
+
+}
+
+.card:hover .small-card{
+    transform: translate(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+.card.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .image img{
+    height: auto;
+    width:150px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+.card:hover .image img{
+    transform: scale(1.1);
+}
+.small-card i{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 40px;
+}
