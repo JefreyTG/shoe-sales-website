@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Stylish', serif;
 }
 html{
     scroll-behavior: smooth;
@@ -38,6 +38,7 @@ nav{
 }
 div.logo h1{
     font-size: 35px;
+    font-family: 'Stylish', serif;
     color: var(--blue);
     margin: 5px 0;
     cursor: pointer;
@@ -60,6 +61,7 @@ li{
 
 a{
     text-decoration: none;
+    font-weight: 500;
     color: var(--blue);
     transition: 0.2s;
 }
@@ -77,16 +79,27 @@ i.fa-regular.fa-heart, i.fa-solid.fa-cart-shopping, i.fa-regular.fa-user{
 i:hover{
     color: var(--dark-red);
 }
+.main{
+    display: flex;
+    justify-content: space-around;
+}
 div.main-content{
     
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+.main-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: space-around;
+}
 .main-text h1{
-    font-size: 55px;
+    font-size: 65px;
     line-height: 70px;
-    font-family: pyxidium quick;
+    font-family: 'Stylish', serif;
     background: linear-gradient(to right, #ef233c, #003049 );
     background-clip: text;
     -webkit-background-clip: text;
@@ -94,15 +107,17 @@ div.main-content{
     position: relative;
     top: 75px;
     left: 5%;
+    bottom: 25px;
 }
 .main-text h1 span{
-    font-size: 45px;
+    font-size: 55px;
     background: linear-gradient(to right, #ef233c, #003049 );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-p{
-    width: 200px;
+.main-text p{
+    width: 300px;
     font-weight: 400;
     text-align: justify;
     line-height: 21px;
@@ -111,7 +126,9 @@ p{
     left: 5%;
     color: var(--blue);
 }
+
 .main-image img{
+    margin-left: 40px;
     width: 325px;
     position: relative;
     left: 20px;
@@ -134,6 +151,7 @@ i.fa-brands.fa-facebook, i.fa-brands.fa-square-x-twitter, i.fa-brands.fa-square-
     color: var(--dark-red);
 }
 div.button{
+    display: flex;
     position: absolute;
     left: 6%;
     padding: 10px 20px ;
@@ -174,17 +192,19 @@ div.button{
     -webkit-text-fill-color: transparent;
 }
 .products .box{
-    width: 90%;
+    width: 100%;
     margin: 10px 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 25px 10px;
+
 }
 div.card{
     display: flex;
     flex-direction: column;
-    width: 290px;
-    height: 440px;
+    column-gap: 5px;
+    width: 300px;
+    height: 420px;
     box-shadow: 0 0 8px var(--blue);
     border-radius: 9px;
     text-align: center;
@@ -192,8 +212,9 @@ div.card{
     background-color: var(--beige);
     background-image: url('./image/bgn-img.png');
     background-size: cover;
+    
 }
-.small-card{
+div.small-card{
     display: flex;
     flex-flow: column;
     position: absolute;
@@ -210,13 +231,16 @@ div.card{
     opacity: 1;
 }
 .card.image{
+    margin-bottom: 0%;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.card .image img{
-    height: auto;
-    width:150px;
+div.image img{
+    height: 120px;
+    width:120px;
     margin: 15px 0;
     transition: 0.3s;
 }
@@ -230,4 +254,73 @@ div.card{
     font-size: 18px;
     margin: 2px 0;
     line-height: 40px;
+}
+div.products-text {
+    width: 100%;
+    height: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content:space-around ;
+    gap: 10px;
+     
+}
+
+.products-text h3{
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-bottom: 20px;
+    
+}
+
+.products-text h2 {
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+div.products-text p {
+    width: fit-content;
+    height: fit-content;
+    color: var(--blue);
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+div.products-text h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div.products-star {
+    position:relative ;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    color: orange;
+    cursor: pointer;
+}
+
+div.products-text .btn {
+    width: fit-content;
+    height: fit-content;
+    color: var(--beige);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ef233c, #003049);
 }
