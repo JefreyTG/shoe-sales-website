@@ -17,6 +17,10 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    background-image: url("./image/bgn-img1.jpg");
+    background-repeat: repeat;
+}
 section{
     width: 800px;
     height: 100vh;
@@ -154,6 +158,7 @@ div.button{
     display: flex;
     position: absolute;
     left: 6%;
+    top: 70px;
     padding: 10px 20px ;
     border-radius: 30px ;
     background: linear-gradient(to right, #8d99ae, #003049);
@@ -323,4 +328,24 @@ div.products-text .btn {
     font-weight: 500;
     padding: 10px 20px;
     background: linear-gradient(to right, #ef233c, #003049);
+}
+
+/*--About*/
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 35px 0;
+}
+
+.about h1{
+    font-size: 60px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
