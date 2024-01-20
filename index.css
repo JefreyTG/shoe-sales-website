@@ -22,14 +22,15 @@ body{
     background-repeat: repeat;
 }
 section{
-    width: 800px;
+    width: 100%;
     height: 100vh;
     background-image: url('./image/bgn-img1.jpg');
-    background-size: cover;
+    background-size: repeat;
     background-position: center;
 }
 nav{
     width: 100%;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -41,7 +42,7 @@ nav{
     z-index: 100;
 }
 div.logo h1{
-    font-size: 35px;
+    font-size: 2rem;
     font-family: 'Stylish', serif;
     color: var(--blue);
     margin: 5px 0;
@@ -65,12 +66,14 @@ li{
 
 a{
     text-decoration: none;
+    font-size: 1.5rem;
     font-weight: 500;
     color: var(--blue);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 a:hover{
     color: var(--dark-red);
+    text-decoration: underline;
 }
 
 i.fa-regular.fa-heart, i.fa-solid.fa-cart-shopping, i.fa-regular.fa-user{
@@ -133,7 +136,7 @@ div.main-content{
 
 .main-image img{
     margin-left: 40px;
-    width: 325px;
+    width: 350px;
     position: relative;
     left: 20px;
     top: 75px;
@@ -178,15 +181,16 @@ div.button{
 
 /*Products*/
 
-.products{
+div#Products.products{
     width: 100%;
-    height: 140vh;
+    height: fit-content;
+    margin:15px;
     padding: 25px;
     background-image: url('./image/bgn-img1.jpg');
 }
 .products h1{
     margin: 35px 0;
-    font-size: 60px;
+    font-size: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,7 +200,7 @@ div.button{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.products .box{
+div.box{
     width: 100%;
     margin: 10px 10px;
     display: grid;
@@ -208,8 +212,8 @@ div.card{
     display: flex;
     flex-direction: column;
     column-gap: 5px;
-    width: 300px;
-    height: 420px;
+    width: 250px;
+    height: 350px;
     box-shadow: 0 0 8px var(--blue);
     border-radius: 9px;
     text-align: center;
@@ -244,25 +248,25 @@ div.small-card{
     justify-content: center;
 }
 div.image img{
-    height: 120px;
-    width:120px;
-    margin: 15px 0;
+    height: 80px;
+    width:80px;
+    margin: 5px 0;
     transition: 0.3s;
 }
 .card:hover .image img{
     transform: scale(1.1);
 }
 .small-card i{
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 5px;
     font-size: 18px;
     margin: 2px 0;
     line-height: 40px;
 }
 div.products-text {
-    width: 100%;
-    height: 150%;
+    width: 220px;
+    height: 230px;      
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,7 +279,7 @@ div.products-text {
 .products-text h3{
     width: fit-content;
     height: fit-content;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 10%;
     margin-bottom: 20px;
     
@@ -285,7 +289,7 @@ div.products-text {
     width: fit-content;
     height: fit-content;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
@@ -294,9 +298,10 @@ div.products-text p {
     height: fit-content;
     color: var(--blue);
     font-weight: 500;
+    font-size: 1rem;
     line-height: 20px;
     margin-top: 0px;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -317,7 +322,7 @@ div.products-star {
     cursor: pointer;
 }
 
-div.products-text .btn {
+a.btn {
     width: fit-content;
     height: fit-content;
     color: var(--beige);
@@ -326,26 +331,135 @@ div.products-text .btn {
     border-radius: 15px;
     text-decoration: none;
     font-weight: 500;
-    padding: 10px 20px;
+    font-size: 1rem;
+    padding: 2px 2px;
     background: linear-gradient(to right, #ef233c, #003049);
 }
 
 /*--About*/
 
-.about{
+div#About.about{
     width: 100%;
     height: 100vh;
-    padding: 35px 0;
+    margin-top: 10px;
+    padding: 15px 0;
 }
 
-.about h1{
-    font-size: 60px;
-    margin-top: 20px;
+div#About.about h1{
+    width: 100%;
+    height: fit-content;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: black;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 
+}
+div#About.about h1 span{
+    background:linear-gradient(to right, #ef233c, #003049);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+div.about-main{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    padding: 15px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+div.about-image{
+    display: flex;
+    margin-top: 10px;
+
+}
+div.about-small-image{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+}
+div.about-small-image img{
+    height: 60px;
+    width: 70px;
+    margin: 5px 0;
+    cursor: pointer;
+    background:linear-gradient(to right, #ef233c, #003049);
+    display: block;
+    border-radius: 10px;
+    padding: 5px 5px;
+    box-shadow: 0 0 6px rgba(0 0 0 0.6);
+    opacity: 0.8;
+}
+div.about-small-image img:hover{
+    opacity: 1;
+
+}
+div.image-container{
+    margin:15px;
+    padding: 10px;
+    display: flex;
+}
+div.image-container img{
+    border: 3px solid var(--blue);
+    border-radius: 15px;
+    height: 250px;
+    padding:30px;
+    box-shadow: 0 0 8px var(--red);
+}
+div.about-text{
+   width: fit-content;
+   height: fit-content;
+   margin-top: 50px;
+}
+div.about-text p{
+    width: 500px;
+    height:350px;
+    background: linear-gradient(to right, #ef233c, #003049 );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 22px;
+    text-align: justify;
+    padding: 25px 30px;
+    border: 2px solid;
+    border-radius: 20px;
+    box-shadow: 0 0 8px var(--red); 
+
+}
+a.about-btn{
+    color: black;
+    background: none;
+    position: relative;
+    top: 10px;
+    left: 10%;
+    bottom: 100px;
+    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 8px var(--red);
+    transition: 0.5s;
+
+
+}
+a.about-btn:hover{
+    border: 2px solid transparent;
+    background: var(--red);
+    color: beige;
 }
