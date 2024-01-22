@@ -5,7 +5,7 @@
     --light-gray:#edf2f4;
     --dark-gray: #8d99ae;
     --blue:#003049; 
-    --beige:#fdf0d5ef;
+    --beige:#f5f3f2ef;
 
 }
 *{
@@ -20,8 +20,8 @@ html{
 body{
     
     width: 100%;
-    background-image: url("./image/bgn-img1.jpg");
-    background-repeat: repeat;
+    background-image: url("./image/bgn-img2.jpg");
+    background-position: initial;
 }
 section{
     width: 100%;
@@ -197,7 +197,7 @@ div#Products.products{
     height: fit-content;
    margin-bottom: 100px;
     padding: 25px;
-    background-image: url('./image/bgn-img1.jpg');
+    background-image: url('./image/bgn-img2.jpg');
 }
 .products h1{
     position:absolute;
@@ -209,7 +209,7 @@ div#Products.products{
     justify-content: center;
     text-transform: uppercase;
     background-clip: text;
-    background: linear-gradient(to right, #ef233c, #003049 );
+    background: linear-gradient( to left, #ef233c, #003049 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -231,7 +231,7 @@ div.card{
     column-gap: 5px;
     width: 250px;
     height: 350px;
-    box-shadow: 0 0 8px var(--blue);
+    box-shadow: 0 0 8px var(--dark-red);
     border-radius: 9px;
     text-align: center;
     padding: 10px 20px;
@@ -491,6 +491,100 @@ a.about-btn:hover{
     background: var(--red);
     color: beige;
 }
+/*end of about*/
+
+/*Review*/
+div.review{
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    justify-content: space-around;
+}
+div.review h1{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+.review h1 span{
+    background: linear-gradient(to right, #ef233c, #003049);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div.review-box{
+    width: 75%;
+    position: relative;
+    top: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.profile-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px 0;
+    box-shadow: 0 0 10px rgba(0 0 0 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.profile-image:hover{
+    transform: scale(1.2);
+}
+
+.profile-image img{
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+div.review-card{
+    width: 350px;
+    height: auto;
+    background:#edf2f4;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-left: 80px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0 0 0 0.3);
+}
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile.name{
+    font-size: 20px;
+}
+
+.like{
+    color:orange;
+    display: inline-block;
+    font-size: 12px;
+}
+.comment p{
+    width: 325px;
+    height: auto;
+    padding: 10px;
+    text-align: justify;
+    line-height: 22px;
+    margin-top: 15px;
+}
+/*Endo of Review*/
+
+/*Services*/
+
+
+/*-------------*/
 
 @media screen and (max-width:800px) {
 
@@ -713,6 +807,7 @@ div.about-text p{
         margin-top: 440px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     a.about-btn{
         position: relative;
