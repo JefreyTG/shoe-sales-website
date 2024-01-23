@@ -199,7 +199,7 @@ div#Products.products{
     padding: 25px;
     background-image: url('./image/bgn-img2.jpg');
 }
-.products h1{
+div.products h1{
     position:absolute;
     width: 100%;
     margin: 15px 0;
@@ -209,7 +209,7 @@ div#Products.products{
     justify-content: center;
     text-transform: uppercase;
     background-clip: text;
-    background: linear-gradient( to left, #ef233c, #003049 );
+    background: linear-gradient(to right, #ef233c, #003049);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -582,6 +582,254 @@ div.review-card{
 /*Endo of Review*/
 
 /*Services*/
+.services{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0 10px 0;
+}
+.services h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+
+}
+.services h1 span{
+    margin-left: 15px;
+    background: linear-gradient(to right, #ef233c, #003049);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div.services-cards{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top:50px
+}
+div.services-box i{
+    font-size: 3rem;
+    color: orange;
+    margin: 20px 0;
+    cursor: pointer;
+}
+div.services-box h3{
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+div.services-box p{
+    text-align: center;
+    color: #8d99ae;
+    margin-bottom: 60px;
+}
+
+/*Login section*/
+
+div.login-form{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+div.left img{
+    width: 650px;
+}
+
+div.right{
+    position: relative;
+    top: -50px;
+    left: -60px;
+    padding: 50px 80px;
+
+}
+div.right h1{
+    font-family: "stylish", serif;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+div.right p{
+    margin-bottom: 5px;
+}
+div.user{
+    border: 2px solid var(--dark-red);
+    border-radius: 10px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+
+}
+div.user i{
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: var(--blue);
+}
+div.user .username{
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    font-size: 1rem;
+}
+div.password-tag{
+    margin: 15px 0 5px 0;
+}
+div.password{
+    border: 2px solid var(--dark-red);
+    border-radius: 10px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+div.password i{
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: var(--blue);
+}
+div.password input{
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 1rem;
+}
+::-webkit-input-placeholder{
+    color:black;
+    opacity: 0.7;
+}
+div.forget{
+    position: relative;
+    left: 60%;
+    margin: 6px 0 10px 0;
+    cursor: pointer;
+}
+div.right button{
+    width: 350px;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, #ef233c, #003049);
+}
+div.loging-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+div.loging-icon a{
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: var(--beige);
+    box-shadow: 0 0 5px rgba(0 0 0 0.6);
+}
+a img{
+    width: 20px;
+    margin: 5px 5px;
+    border-radius: 50% ;
+}
+/* end of login section*/
+
+/*Footer*/
+footer{
+    width: 100%;
+}
+div.footer-main{
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+}
+div.footer-main .tag{
+    margin: 10px 0;
+}
+div.footer-main .tag .center{
+    text-align: center;
+}
+div.footer-main .tag h1{
+    font-size: 1.5rem;
+    margin: 25px 0;
+    color:var(--blue);
+}
+
+div.footer-main .tag a{
+    font-size: 1rem;
+    display: block;
+    color:var(--dark-red);
+    text-decoration: none;
+    margin: 9px 0;
+}
+div.footer-main .tag a i{
+    padding: 0 10px;
+    transition: 0.3;
+}
+div.footer-main .tag a i:hover{
+    color: var(--red);
+}
+div.footer-main .tag .social-link{
+    display: flex;
+}
+div.footer-main .tag .social-link a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--blue);
+    box-shadow: 0 0 20px 10px rgba(0 0 0 0.5);
+    position: relative;
+    margin: 0 5px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+div.footer-main .tag .social-link a .fa-brands{
+    font-size: 1rem;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+}
+
+div.footer-main .tag .social-link a:hover i{
+    color: white;
+}
+div.footer-main .tag .social-link a::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: linear-gradient(to right, #ef233c, #003049);
+    position:absolute;
+    z-index: -10;
+    transition: 0.5s;
+} 
+div.footer-main .tag .social-link a:hover::after{
+    left: 0;
+}
+
+iv.footer-main .tag  .search-bar{
+    width: 230px;
+    height: 30px;
+    background: var(--beige);
+}
+
 
 
 /*-------------*/
